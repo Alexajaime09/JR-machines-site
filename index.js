@@ -19,6 +19,6 @@ document.querySelectorAll('.machines__section .box-maquina').forEach(
     previewBox.forEach( close =>{
         close.querySelector('#close').onclick = ()=>{
             close.classList.remove('active')
-            previewContainer.style.display= 'none'
+            previewContainer.style.display = 'none'
         }
     })

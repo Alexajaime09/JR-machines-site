@@ -68,20 +68,20 @@ rel="stylesheet"/>
  <!--MAQUINAS-->
 
 <section class="container">
-
-    <div class="title-section">
-        <h2>MAQUINAS</h2>
-    </div>
+    <!--
+         <div class="title-section"> 
+    -->
+          <h2 class="title-section"> MAQUINAS </h2>
 
     <div class="container__section machines__section">
         <div data-name="p-1" class="box-maquina relief-box-white">
             <i class='bx bx-x' id="close-menu"></i>
-            <h3 class="name-machine">MexToy 5000</h3>
+            <h3 class="name-machine">JR-01 </h3>
             <div class="box-maquina__image">
-                <img src="img/machine-1.png" alt="">
+                <img src="img/maq-4.png" alt="">
             </div>
             <div class="box-maquina__descrip">
-                <p><span class="strong-word"><i class='bx bxs-ruler'></i></span>80cmx80cmx190cmalto</p>
+                <p><span class="strong-word"><i class='bx bxs-ruler'></i></span>70cmx54cmx143cm de alto</p>
                 <p><span class="strong-word"><i class='bx bx-plug'></i></span> 110v</p>
                 <p><span class="strong-word"><i class='bx bx-money'></i></span> programable</p>
 
@@ -91,12 +91,12 @@ rel="stylesheet"/>
       
         <div data-name="p-2" class="box-maquina relief-box-white">
             <i class='bx bx-x' id="close-menu"></i>
-            <h3  class="name-machine">MexToy 5002</h3>
+            <h3  class="name-machine">  JR-02</h3>
             <div class="box-maquina__image">
-                <img src="img/machine-1.png" alt="">
+                <img src="img/maq-2.png" alt="">
             </div>
             <div class="box-maquina__descrip">
-                <p><span class="strong-word"><i class='bx bxs-ruler'></i></span>80cmx80cmx190cm de alto</p>
+                <p><span class="strong-word"><i class='bx bxs-ruler'></i></span>62cmx44cmx160cm de alto</p>
                 <p><span class="strong-word"><i class='bx bx-plug'></i></span> 110v</p>
                 <p><span class="strong-word"><i class='bx bx-money'></i></span> programable</p>
 
@@ -106,13 +106,13 @@ rel="stylesheet"/>
 
         <div data-name="p-3" class="box-maquina relief-box-white">
             <i class='bx bx-x' id="close-menu"></i>
-            <h3 class="name-machine">MexToy 5003</h3>
+            <h3 class="name-machine">JR-03</h3>
             <div class="box-maquina__image">
-                <img src="img/machine-1.png" alt="">
+                <img src="img/maq-3.png" alt="">
             </div>
 
             <div class="box-maquina__descrip">
-                <p><span class="strong-word"><i class='bx bxs-ruler'></i></span>80cmx80cmx190cm de alto</p>
+                <p><span class="strong-word"><i class='bx bxs-ruler'></i></span>70cmx54cmx166.5cm de alto</p>
                 <p><span class="strong-word"><i class='bx bx-plug'></i></span> 110v</p>
                 <p><span class="strong-word"><i class='bx bx-money'></i></span> programable</p>
 
@@ -121,13 +121,29 @@ rel="stylesheet"/>
         </div>
         <div data-name="p-4" class="box-maquina relief-box-white">
             <i class='bx bx-x' id="close-menu"></i>
-            <h3 class="name-machine">MexToy 5004</h3>
+            <h3 class="name-machine">JR-04</h3>
             <div class="box-maquina__image">
-                <img src="img/machine-1.png" alt="">
+                <img src="img/kike-1.png" alt="">
             </div>
          
             <div class="box-maquina__descrip">
-                <p><span class="strong-word"><i class='bx bxs-ruler'></i></span>80cmx80cmx190cm de alto</p>
+                <p><span class="strong-word"><i class='bx bxs-ruler'></i></span>70cmx54cmx143cm de alto</p>
+                <p><span class="strong-word"><i class='bx bx-plug'></i></span> 110v</p>
+                <p><span class="strong-word"><i class='bx bx-money'></i></span> programable</p>
+
+            </div>
+
+        </div>
+
+        <div data-name="p-5" class="box-maquina relief-box-white">
+            <i class='bx bx-x' id="close-menu"></i>
+            <h3 class="name-machine">JR-05</h3>
+            <div class="box-maquina__image">
+                <img src="img/maq-5.png" alt="">
+            </div>
+         
+            <div class="box-maquina__descrip">
+                <p><span class="strong-word"><i class='bx bxs-ruler'></i></span>30cmx45cmx143cm de alto</p>
                 <p><span class="strong-word"><i class='bx bx-plug'></i></span> 110v</p>
                 <p><span class="strong-word"><i class='bx bx-money'></i></span> programable</p>
 
@@ -146,9 +162,9 @@ rel="stylesheet"/>
 
 <section class="container">
 
-    <div class="title-section">
-        <h2>CONTACTO</h2>
-    </div>
+    
+        <h2 class="title-section" >CONTACTO</h2>
+    
 
     <div class="container__section">
 
@@ -163,34 +179,30 @@ rel="stylesheet"/>
                 Ingresa tus datos para ponernos en contacto contigo o contáctanos en el siguiente correo: <a href="mailto:">mextoy@gmail.com</a>
             </p>
 
-            <div class="form">
+        
 
-                <form action="">
+                <form class="form" action="">
                     <div class="input-wrap">
-                        <label class="label-form" for="nombre">Nombre</label>
+                        <label class="label-form" for="name">Nombre</label>
                         <div class="form-input-space">
                             <i class='bx bx-ghost' id="ghost-icon"></i>
-                            <input class="form-input" type="text">
+                            <input id="name" class="form-input" type="text">
                         </div>
                     </div>
 
                     <div class="input-wrap">
                         <label class="label-form" for="email">Correo</label>
-                        <div class="form-input-space">
-                            <i class='bx bx-envelope' id="mail-icon"></i>
-                            <input class="form-input" type="email">
-                            
-                        </div>
-
+                            <div class="form-input-space">
+                                <i class='bx bx-envelope' id="mail-icon"></i>
+                                <input id="email" class="form-input" type="email">
+                            </div>
                     </div>
 
                     <div class="input-wrap">
-                        <label class="label-form" for="nombre">Mensaje</label>
-                        <div class="form-input-space">
-                            <textarea name="" id="" cols="30" rows="10"></textarea>
-
-                        </div>
-
+                        <label class="label-form" for="message">Mensaje</label>
+                             <div class="form-input-space">
+                                <textarea name="" id="message" cols="30" rows="10"></textarea>
+                             </div>
                     </div>
 
                    <button class="relief-button" type="submit">Enviar</button>
@@ -198,63 +210,76 @@ rel="stylesheet"/>
 
                 </form>
 
-            </div>
+           
 
         </div>
 
+        <!--PREVIEW-->
+
+    </section>
+
+        <section class="container">
        
             <div class="products-preview">
 
-             <div class="preview active" data-target="p-1">
+             <div class="preview" data-target="p-1">
                 <i class='bx bx-x' id="close"></i>
-                <img src="img/machine-1.png" alt="">
-                <h3>MEXTOY 5000</h3>
+                <img src="img/maq-4.png" alt="">
+                <h3>JR-01</h3>
                 <P>
                     Construida con materiales de alta calidad, esta máquina arcade es resistente y duradera, garantizando años de entretenimiento ininterrumpido. Su diseño compacto la hace perfecta para cualquier espacio, ya sea en la sala de estar, el sótano o la sala de juegos
                 </P>
                 <div class="price">$13,000</div>
-                <div class="button"></div>
-                <button class="relief-button compra" type="submit">Comprar</button>
+                <button class="relief-button compra" type="submit">Apartar</button>
 
             </div>
 
             <div class="preview " data-target="p-2">
                 <i class='bx bx-x' id="close"></i>
-                <img src="img/machine-1.png" alt="">
-                <h3>MEXTOY 5002</h3>
+                <img src="img/maq-2.png" alt="">
+                <h3>JR-02</h3>
                 <P>
                     Construida con materiales de alta calidad, esta máquina arcade es resistente y duradera, garantizando años de entretenimiento ininterrumpido. Su diseño compacto la hace perfecta para cualquier espacio, ya sea en la sala de estar, el sótano o la sala de juegos
                 </P>
                 <div class="price">$13,000</div>
-                <div class="button"></div>
-                <div>comprar</div>
+                <button class="relief-button compra" type="submit">Apartar</button>
 
             </div>
 
             <div class="preview" data-target="p-3">
                 <i class='bx bx-x' id="close"></i>
-                <img src="img/machine-1.png" alt="">
-                <h3>MEXTOY 5003</h3>
+                <img src="img/maq-3.png" alt="">
+                <h3>JR-03</h3>
                 <P>
                     Construida con materiales de alta calidad, esta máquina arcade es resistente y duradera, garantizando años de entretenimiento ininterrumpido. Su diseño compacto la hace perfecta para cualquier espacio, ya sea en la sala de estar, el sótano o la sala de juegos
                 </P>
                 <div class="price">$13,000</div>
-                <div class="button"></div>
-                <div>comprar</div>
-
+                <button class="relief-button compra" type="submit">Apartar</button>
             </div>
 
 
             <div class="preview" data-target="p-4">
                 <i class='bx bx-x' id="close"></i>
-                <img src="img/machine-1.png" alt="">
-                <h3>MEXTOY 5004</h3>
+                <img src="img/kike-1.png" alt="">
+                <h3>JR-04</h3>
                 <P>
                     Construida con materiales de alta calidad, esta máquina arcade es resistente y duradera, garantizando años de entretenimiento ininterrumpido. Su diseño compacto la hace perfecta para cualquier espacio, ya sea en la sala de estar, el sótano o la sala de juegos
                 </P>
                 <div class="price">$13,000</div>
-                <div class="button"></div>
-                <div>comprar</div>
+                <button class="relief-button compra" type="submit">Apartar</button>
+
+            </div>
+
+
+            <div class="preview" data-target="p-5">
+                <i class='bx bx-x' id="close"></i>
+                <img src="img/maq-5.png" alt="">
+                <h3>JR-05</h3>
+                <P>
+                    Construida con materiales de alta calidad, esta máquina arcade es resistente y duradera, garantizando años de entretenimiento ininterrumpido. Su diseño compacto la hace perfecta para cualquier espacio, ya sea en la sala de estar, el sótano o la sala de juegos
+                </P>
+                <div class="price">$13,000</div>
+                <button class="relief-button compra" type="submit">Apartar</button>
 
             </div>
 
