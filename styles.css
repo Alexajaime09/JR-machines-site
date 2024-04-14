@@ -2,11 +2,11 @@
     --bg:#ebeef1;
     --bg2: #b8bcc8;
     --white: #efefef;
-    --text:#4D4D4D
+    --text:#4D4D4D;
     --text2:#727272;
-    --blue:#1E7EC2;
     --yellow:#FFE33D;
-    --blue:#1E7EC2;
+    --bluebutton:#1A5882;
+    --titleblue:#1E7EC2;
     --D-blue:#175a8d;
     --strong:#4c4b4b;
 
@@ -25,6 +25,12 @@ html{
     font-size: 62.5%;
 }
 
+.texto{
+
+    font-size: 2rem;
+    color: var(--text);
+    text-align: center;
+}
 
 .bar-nav{
     display: flex;
@@ -70,7 +76,7 @@ body{
 
 .menu a{
     color: var(--D-blue);
-    font-size: 1.7rem;
+    font-size: 2.2rem;
     font-weight: 500;
     margin-right: 1.5rem;
     position: relative;
@@ -99,7 +105,7 @@ body{
 }
 
 .logo{
-    color: var(--blue);
+    color: var(--titleblue);
     font-size: 3rem;
     font-weight: 600;
     position: relative;
@@ -110,7 +116,7 @@ body{
     width: 100%;
     height: 100vh;
     display:grid;
-    grid-template-columns: repeat(auto-fit,minmax(240px, 1fr));
+    grid-template-columns: repeat(auto-fit,minmax(400px, 1fr));
     position: relative;
     top: 0;
     left: 0;
@@ -138,9 +144,9 @@ body{
 }
 
 .relief-button{
-    background-color: var(--blue);
+    background-color: var(--bluebutton);
     border-radius: 15px;
-    box-shadow: -3px -1px 2px rgba(21, 114, 195, 0.8),
+    box-shadow: -3px -1px 2px rgb(22 80 131 / 80%),
     3px 3px 5px rgba(3, 24, 42, 0.4);
 }
 
@@ -165,15 +171,15 @@ body{
     position: relative;
     top:20%;
     left: 3%;
-    max-width: 700px;
     text-align: center;
+    width: 100%;
    
    
 }
 .hero__texto h1{
     font-size: 5rem;
     font-weight: 600;
-    color: var(--blue);
+    color: var(--titleblue);
     margin-bottom: 20px;
 }
 
@@ -185,11 +191,12 @@ body{
     text-transform: uppercase;
     padding: 10px;
 }
-.hero__button {
+ .button {
     margin-top: 70px;
+    margin-bottom: 10px;
 }
 
-.hero__button a{
+.button a{
    padding: 7px 17px;
    font-weight: 600;
    font-size: 20px;
@@ -232,23 +239,28 @@ width: 100%;
 
 .container .container__section{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
     gap: 1.6rem;
 }
 
 .container__section .box-maquina{
    
     display: flex;
-  
     flex-direction: column;
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    transform: translateY(0px);
+    transition: all ease .5s;
 
 }
 
+.container__section .box-maquina:hover{
+    transform: translateY(8px);
+}
+
 .box-maquina__image{
-    width: 100%;
+    max-width: 50%;
     height: auto;
     padding: 5%;
 }
@@ -264,10 +276,10 @@ width: 100%;
     width: 100%;
 }
 .box-maquina .name-machine{
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-weight: 600;
     margin-bottom: 7px;
-    color: var(--blue);
+    color: var(--bluebutton);
     letter-spacing: 8px;
     margin-top: 5%;
 }
@@ -302,7 +314,21 @@ width: 100%;
     display: none;
 }
 
+/*////////////REFACCIONES////////*/
+.refacciones{
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  } 
 /*CONTACT-US*/
+
+.container__contact{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.6rem;
+}
 
 .contact-us{
     width: 100%;
@@ -313,13 +339,13 @@ width: 100%;
     font-weight: 400;
     text-align: center;
     padding-bottom: 2rem;
-    color: #1E7EC2;
+    color: var(--D-blue);
 }
-.contact-us p{
 
-    font-size: 1.2rem;
-    color: var(--text);
-    text-align: center;
+
+.contact-us a{
+    font-weight: 700;
+    color: var(--titleblue);
 }
 
 .map{
@@ -331,8 +357,9 @@ width: 100%;
     padding: 12px;
 }
 .input-wrap .label-form{
-    font-size: 1.5rem ;
-    color: var(--blue);
+    font-size: 2rem ;
+    color: var(--D-blue);
+    font-weight: 600;
 }
 
 .form-input{
@@ -340,10 +367,10 @@ width: 100%;
     padding: 12px 35px;
     margin: 8px 0;
     border: none;
-    border-bottom: 2px solid var(--blue);
+    border-bottom: 2px solid var(--D-blue);
     background-color: transparent;
     font-size: 1.2rem;
-    color: #1E7EC2;
+    color: var(--D-blue);
     position: relative;
 }
 
@@ -392,6 +419,8 @@ width: 100%;
     cursor: pointer;
 }
 
+
+/*////////PRODUCTS PREVIEW////////*/
 
 .products-preview {
     position:fixed;
@@ -469,7 +498,7 @@ width: 100%;
 
 /*BREAKPOINTS*/
 
-@media(max-width: 762px){
+@media(max-width: 768px){
     .hero__texto{
         top: 0%;
     }
@@ -488,6 +517,7 @@ width: 100%;
         font-size: 2.5rem;
 
     }
+
 
 .icons{
     display:inline-flex;
@@ -549,19 +579,21 @@ transition: all ease .6s;
     padding-top: 2rem;
   }
 
+
 }
 
+   
 
 
 /* SEPARACION////////////////*/
 
 @media (max-width: 620px){
     
-    .container .machines__section{
+  /*  .container .machines__section{
         display: grid;
         grid-template-columns: repeat( 2, 1fr);
         gap:1rem;
-    }
+    }*/
 
     .products-preview .preview{
        
@@ -571,7 +603,25 @@ transition: all ease .6s;
         font-size: 1.5rem;
         letter-spacing: 5px;
     }
-  
+    .hero{
+   
+        display:grid;
+        grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
+    
+       
+    }
+    .box-maquina__descrip p {
+        font-size: 1.1rem;
+        font-weight: 400;
+        color: var(--text);
+    }
+
+
+    .input-wrap .label-form{
+        font-size: 1.5rem ;
+      
+    }
+
 
 }
 

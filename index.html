@@ -4,15 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MexToy.com</title>
+    <meta name="description" content="tienda en linea de maquinas de caza peluches">
 
-    <link rel="stylesheet" href="styles.css">
+ <!--Prefetch-->
+ <link rel="prefetch" href="#products" as="document">   
+
+<!--Preload-->
+<link rel="preload" href="styles.css" as="style">
+<link rel="stylesheet" href="styles.css">
 
 <!--Font-->
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Urbanist:wght@200;300;400;500;600;700;800&display=swap" crossorigin="crossorigin" as="font">
+
 <link
 href="https://fonts.googleapis.com/css2?family=Urbanist:wght@200;300;400;500;600;700;800&display=swap"
 rel="stylesheet"/>
 
+<!--Boxicoins-->
+<link rel="preload" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" crossorigin="crossorigin" as="font">
+
 <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+<!--image-main-->
+<link rel="preload" href="img/bg/whitee-machine.png" as="image">
 
 
 </head>
@@ -32,11 +46,11 @@ rel="stylesheet"/>
 
         <nav class="menu">
 
-            <a href="inicio" styles="--i:0;">Inicio</a>
+            <a href="#home" styles="--i:0;">Inicio</a>
             <a href="about-us" styles="--i:1;">Nosotros</a>
-            <a href="productos" styles="--i:2;">Maquinas</a>
-            <a href="refacciones" styles="--i:3;">Refacciones</a>
-            <a href="Contacto" styles="--i:4;">Contacto</a>
+            <a href="#products" styles="--i:2;">Maquinas</a>
+            <a href="#refacciones" styles="--i:3;">Refacciones</a>
+            <a href="#contact" styles="--i:4;">Contacto</a>
 
         </nav>
         
@@ -45,29 +59,32 @@ rel="stylesheet"/>
 <!--HERO SECTION-->
 
 
-<div class="hero">
+<main class="hero" id="home">
     <div class="hero__texto">
         <h1> Construye un negocio escalable con maquinas de destreza</h1>
         <p>Liderazgo e Innovación en la industria de juegos de destreza </p> 
        
-        <div class="hero__button">
+        <div class="button">
 
             <a class="relief-button"> Start Now</a> 
 
         </div>
     </div>
-
-    <div class="hero__image relief-box">
-            <img src="img/bg/whitee-machine.png" alt="">
-    </div>
+    
+    
+    <picture class="hero__image relief-box">
+        <source  type="image/webp" srcset="img/bg/whitee-machine.webp">
+        <img loading="lazy" src="img/bg/whitee-machine.png" alt="">
+    </picture>
    
-</div>
+   
+</main>
 
 
 
  <!--MAQUINAS-->
 
-<section class="container">
+<section class="container" id="products">
     <!--
          <div class="title-section"> 
     -->
@@ -77,9 +94,11 @@ rel="stylesheet"/>
         <div data-name="p-1" class="box-maquina relief-box-white">
             <i class='bx bx-x' id="close-menu"></i>
             <h3 class="name-machine">JR-01 </h3>
-            <div class="box-maquina__image">
-                <img src="img/maq-4.png" alt="">
-            </div>
+                <picture class="box-maquina__image">
+                    <source  type="image/webp" srcset="img/maq-1.webp">
+                    <img  loading="lazy" src="img/maq-1.png" alt="">
+                </picture>
+        
             <div class="box-maquina__descrip">
                 <p><span class="strong-word"><i class='bx bxs-ruler'></i></span>70cmx54cmx143cm de alto</p>
                 <p><span class="strong-word"><i class='bx bx-plug'></i></span> 110v</p>
@@ -92,9 +111,10 @@ rel="stylesheet"/>
         <div data-name="p-2" class="box-maquina relief-box-white">
             <i class='bx bx-x' id="close-menu"></i>
             <h3  class="name-machine">  JR-02</h3>
-            <div class="box-maquina__image">
-                <img src="img/maq-2.png" alt="">
-            </div>
+            <picture class="box-maquina__image">
+                <source  type="image/webp" srcset="img/maq-2.webp">
+                <img  loading="lazy" src="img/maq-2.png" alt="">
+            </picture>
             <div class="box-maquina__descrip">
                 <p><span class="strong-word"><i class='bx bxs-ruler'></i></span>62cmx44cmx160cm de alto</p>
                 <p><span class="strong-word"><i class='bx bx-plug'></i></span> 110v</p>
@@ -107,9 +127,10 @@ rel="stylesheet"/>
         <div data-name="p-3" class="box-maquina relief-box-white">
             <i class='bx bx-x' id="close-menu"></i>
             <h3 class="name-machine">JR-03</h3>
-            <div class="box-maquina__image">
-                <img src="img/maq-3.png" alt="">
-            </div>
+            <picture class="box-maquina__image">
+                <source type="image/webp" srcset="img/maq-3.webp">
+                <img  loading="lazy" src="img/maq-3.png" alt="">
+            </picture>
 
             <div class="box-maquina__descrip">
                 <p><span class="strong-word"><i class='bx bxs-ruler'></i></span>70cmx54cmx166.5cm de alto</p>
@@ -122,9 +143,10 @@ rel="stylesheet"/>
         <div data-name="p-4" class="box-maquina relief-box-white">
             <i class='bx bx-x' id="close-menu"></i>
             <h3 class="name-machine">JR-04</h3>
-            <div class="box-maquina__image">
-                <img src="img/kike-1.png" alt="">
-            </div>
+            <picture class="box-maquina__image">
+                <source  type="image/webp" srcset="img/maq-4.webp">
+                <img  loading="lazy" src="img/maq-4.png" alt="">
+            </picture>
          
             <div class="box-maquina__descrip">
                 <p><span class="strong-word"><i class='bx bxs-ruler'></i></span>70cmx54cmx143cm de alto</p>
@@ -138,9 +160,10 @@ rel="stylesheet"/>
         <div data-name="p-5" class="box-maquina relief-box-white">
             <i class='bx bx-x' id="close-menu"></i>
             <h3 class="name-machine">JR-05</h3>
-            <div class="box-maquina__image">
-                <img src="img/maq-5.png" alt="">
-            </div>
+            <picture class="box-maquina__image">
+                <source type="image/webp" srcset="img/maq-5.webp">
+                <img  loading="lazy" src="img/maq-5.png" alt="">
+            </picture>
          
             <div class="box-maquina__descrip">
                 <p><span class="strong-word"><i class='bx bxs-ruler'></i></span>30cmx45cmx143cm de alto</p>
@@ -153,20 +176,41 @@ rel="stylesheet"/>
        
         </div>
 
-   
+
+</section>
+
+<!--//////////////SPARE PARTS///////////////-->
+
+<section class="container refacciones" id="refacciones">
+    <h2 class="title-section" >REFACCIONES</h2>
+
+    <p class="texto">Encuentra las refacciones de tus maquinas en nuestra catálogo
+        descargable
+    </p>
+    <div class="button">
+
+        <a class="relief-button" download="refacciones" href="refacciones-JR.pdf">Descargar PDF</a> 
+
+    </div>
+    
+
+
+
 
 
 </section>
 
+
+
 <!-- CONTACT-FORM -->
 
-<section class="container">
+<section class="container" id="contact">
 
     
         <h2 class="title-section" >CONTACTO</h2>
     
 
-    <div class="container__section">
+    <div class="container__contact">
 
         <div class="relief-box-white map">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3761.2860333344515!2d-99.13331048972681!3d19.486325981728665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f9a428a44dcd%3A0xd17eab27f115fb3b!2sParque%20Lindavista!5e0!3m2!1ses-419!2smx!4v1709410080742!5m2!1ses-419!2smx" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -175,7 +219,7 @@ rel="stylesheet"/>
         <div class="contact-us" >
             <h3 class="contact-us__title">Contáctanos</h3>
 
-            <p>
+            <p class="texto">
                 Ingresa tus datos para ponernos en contacto contigo o contáctanos en el siguiente correo: <a href="mailto:">mextoy@gmail.com</a>
             </p>
 
@@ -213,18 +257,22 @@ rel="stylesheet"/>
            
 
         </div>
-
-        <!--PREVIEW-->
+    </div>
 
     </section>
 
+
+          <!--PREVIEW-->
         <section class="container">
        
             <div class="products-preview">
 
              <div class="preview" data-target="p-1">
                 <i class='bx bx-x' id="close"></i>
-                <img src="img/maq-4.png" alt="">
+                <picture>
+                    <source  type="image/webp" srcset="img/maq-1.webp">
+                    <img loading="lazy" src="img/maq-1.png" alt="">
+                </picture>
                 <h3>JR-01</h3>
                 <P>
                     Construida con materiales de alta calidad, esta máquina arcade es resistente y duradera, garantizando años de entretenimiento ininterrumpido. Su diseño compacto la hace perfecta para cualquier espacio, ya sea en la sala de estar, el sótano o la sala de juegos
@@ -236,7 +284,10 @@ rel="stylesheet"/>
 
             <div class="preview " data-target="p-2">
                 <i class='bx bx-x' id="close"></i>
-                <img src="img/maq-2.png" alt="">
+                <picture>
+                    <source  type="image/webp" srcset="img/maq-2.webp">
+                    <img  loading="lazy" src="img/maq-2.png" alt="">
+                </picture>
                 <h3>JR-02</h3>
                 <P>
                     Construida con materiales de alta calidad, esta máquina arcade es resistente y duradera, garantizando años de entretenimiento ininterrumpido. Su diseño compacto la hace perfecta para cualquier espacio, ya sea en la sala de estar, el sótano o la sala de juegos
@@ -248,7 +299,10 @@ rel="stylesheet"/>
 
             <div class="preview" data-target="p-3">
                 <i class='bx bx-x' id="close"></i>
-                <img src="img/maq-3.png" alt="">
+                <picture>
+                    <source  type="image/webp" srcset="img/maq-3.webp">
+                    <img  loading="lazy" src="img/maq-3.png" alt="">
+                </picture>
                 <h3>JR-03</h3>
                 <P>
                     Construida con materiales de alta calidad, esta máquina arcade es resistente y duradera, garantizando años de entretenimiento ininterrumpido. Su diseño compacto la hace perfecta para cualquier espacio, ya sea en la sala de estar, el sótano o la sala de juegos
@@ -260,7 +314,10 @@ rel="stylesheet"/>
 
             <div class="preview" data-target="p-4">
                 <i class='bx bx-x' id="close"></i>
-                <img src="img/kike-1.png" alt="">
+                <picture>
+                    <source type="image/webp" srcset="img/maq-4.webp">
+                    <img  loading="lazy" src="img/maq-4.png" alt="">
+                </picture>
                 <h3>JR-04</h3>
                 <P>
                     Construida con materiales de alta calidad, esta máquina arcade es resistente y duradera, garantizando años de entretenimiento ininterrumpido. Su diseño compacto la hace perfecta para cualquier espacio, ya sea en la sala de estar, el sótano o la sala de juegos
@@ -273,7 +330,10 @@ rel="stylesheet"/>
 
             <div class="preview" data-target="p-5">
                 <i class='bx bx-x' id="close"></i>
-                <img src="img/maq-5.png" alt="">
+                <picture>
+                    <source  type="image/webp" srcset="img/maq-5.webp">
+                    <img  loading="lazy" src="img/maq-5.png" alt="">
+                </picture>
                 <h3>JR-05</h3>
                 <P>
                     Construida con materiales de alta calidad, esta máquina arcade es resistente y duradera, garantizando años de entretenimiento ininterrumpido. Su diseño compacto la hace perfecta para cualquier espacio, ya sea en la sala de estar, el sótano o la sala de juegos
