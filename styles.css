@@ -9,7 +9,7 @@
     --titleblue:#1E7EC2;
     --D-blue:#175a8d;
     --strong:#4c4b4b;
-
+   
 }
 
 *{
@@ -209,8 +209,18 @@ body{
 
 }
 
+/*=================== NOSOTROS =================*/
+.nosotros p{
+    align-content:center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: justify;
+    
+  } 
 
-/*MAQUINAS*/
+
+/*==================== MAQUINAS ==================*/
 .container{
 position: relative;
 background-color: var(--white);
@@ -317,7 +327,7 @@ width: 100%;
     display: none;
 }
 
-/*////////////REFACCIONES////////*/
+/*==========REFACCIONES=============*/
 .refacciones{
     align-content: center;
     display: flex;
@@ -423,7 +433,8 @@ width: 100%;
 }
 
 
-/*////////PRODUCTS PREVIEW////////*/
+
+/*=========PRODUCTS PREVIEW=============*/
 
 .products-preview {
     position:fixed;
@@ -554,7 +565,34 @@ footer .footer-menu a{
    
 }
 
-/* //////////////////////////////*/
+
+/*==============BOTON WHATS ================*/
+
+.b-whats{
+    position: fixed;
+    right:1%;
+    top:60%;
+    padding: 10px;
+    background-color: #008c3f;
+    border-radius: 50%;
+    cursor: pointer;
+    transform: translateY(0px);
+    transition: .4s all ease;
+    z-index: 1;
+}
+
+.b-whats i{
+    color: var(--white);
+    font-size: 5rem;
+}
+
+.b-whats:hover{
+    background-color: #2c6c49;
+    transform: translateY(5px);
+}
+
+
+/*====================================*/
 
 /*BREAKPOINTS*/
 
